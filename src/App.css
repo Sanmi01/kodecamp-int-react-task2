@@ -1,38 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.form-group.address {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group.address input {
+  /* width: 70%; */
+  min-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label {
+  display: block !important;
+  margin-bottom: 0.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+input, select, option, textarea {
+  background: #f1eeee;
+  border-radius: 25px;
+  padding: 5px 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+textarea {
+  width: 100%;
+}
+
+input[type="radio"] {
+appearance: none;
+display: inline-block;
+width: 25px;
+/* width: 30%; */
+height: 25px;
+padding: 6px;
+border: 2px solid black;
+background-color: white;
+border-radius: 50%;
+margin-top: -1px;
+vertical-align: middle;
+margin-right: 5px;
+margin-left: 5px;
+}
+
+input[type="radio"]:checked {
+appearance: none;
+display: inline-block;
+/* width: 25px; */
+height: 25px;
+padding: 6px;
+  background: #1b1a1a;
+border: 2px solid #000000;
+border: 2px solid black;
+border-radius: 50%;
+margin-top: -1px;
+vertical-align: middle;
+margin-right: 5px;
+margin-left: 5px;
+}
+
+.submit-button {
+    min-width: 193px;
+    height: 50px;
+    border-radius: 25px;
+    background: #06262e;
+    color: white;
+}
+
+.submit-button:hover {
+  background-color: rgb(4, 64, 73);
+}
+
+form {
+  width: 60%;
+}
+
+#gender p {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 765px) {   
+  form {
+    width: 100%;
   }
 }
